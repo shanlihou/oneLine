@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="draw.js"></script> 
+        <script src="colorProgress.js"></script> 
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+        <style type="text/css">
+            .progressbar_1{ 
+                background-color:#eee; 
+                height:16px; 
+                width:500px; 
+                border:1px solid #bbb; 
+                color:#222; 
+            } 
+            .progressbar_1 .bar { 
+                background-color:#6CAF00; 
+                height:16px; 
+                width:0; 
+            }
+            .penColor { 
+                background-color:#000000; 
+                height:16px; 
+                width:16px; 
+            }             
+        </style>
+    </head>
+    <body onload="init()">
+        <div><canvas id="myCanvas" width="500" height="500"></canvas></div>
+        <div class="progressbar_1"> 
+            <div class="bar" id="progress"></div> 
+        </div> 
+        <div class="progressbar_1" id="colorRed"> 
+            <div class="bar"></div> 
+        </div> 
+        <div class="progressbar_1" id="colorGreen"> 
+            <div class="bar"></div> 
+        </div> 
+        <div class="progressbar_1" id="colorBlue"> 
+            <div class="bar"></div> 
+        </div> 
+        <div class="penColor"></div>
+        <input type="button" text="reset"></input>
+    </body>
+</html>
